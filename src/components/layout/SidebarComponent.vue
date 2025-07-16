@@ -5,6 +5,7 @@
     app
     class="bg-zinc-900 text-white"
   >
+    <LogoComponent />
     <v-list dense>
       <v-list-item
         v-for="(item, i) in menu"
