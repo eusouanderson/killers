@@ -1,21 +1,6 @@
 <template>
   <v-app>
     <div class="bg-wite-900 min-h-screen text-white">
-      <!-- Header -->
-      <header class="bg-zinc-800 flex items-center justify-between px-6 py-4">
-        <div class="flex items-center space-x-3">
-          <!-- Fundo branco atrás da logo -->
-          <div class="bg-white p-1 rounded-full">
-            <img
-              src="@/assets/logo.png"
-              alt="Logo Killers"
-              class="w-18 h-18 rounded-full"
-            />
-          </div>
-          <h1 class="text-2xl ml-10 font-bold text-red-600">Killers FC</h1>
-        </div>
-        <v-btn color="red darken-1" dark>Nova Temporada</v-btn>
-      </header>
       <!-- Conteúdo Principal -->
       <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
         <!-- Jogadores -->
@@ -67,6 +52,7 @@
 
 <script setup>
 import { ref } from "vue";
+import HeaderComponent from "../layout/HeaderComponent.vue";
 
 const jogadores = ref([
   { id: 1, nome: "Anderson", posicao: "Zagueiro", numero: 4 },
