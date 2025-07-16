@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte padrão para toda a página */
+* {
+  margin-left: 0px;
+  font-family: 'Inter', sans-serif;
+  
+}
+
+* {
+  transition: all 0.8s ease;
+}
