@@ -3,10 +3,15 @@
     v-model="isOpen"
     temporary
     app
-    class="bg-zinc-900 text-white"
+    class="bg-zinc-900 text-white h-screen pt-16 relative border-zinc-700"
   >
-    <LogoComponent />
-    <v-list dense>
+    <div
+      class="absolute top-0 left-0 w-full h-21 bg-zinc-900 flex items-center justify-center z-20"
+    >
+      <LogoComponent />
+    </div>
+
+    <v-list dense class="mt-16">
       <v-list-item
         v-for="(item, i) in menu"
         :key="i"
@@ -37,7 +42,7 @@ watch(
 watch(isOpen, (val) => emit("update:modelValue", val));
 
 const menu = [
-  { label: "Dashboard", icon: "mdi-view-dashboard" },
+  { label: "História", icon: "mdi-view-dashboard" },
   { label: "Jogadores", icon: "mdi-soccer" },
   { label: "Estatísticas", icon: "mdi-chart-bar" },
   { label: "Configurações", icon: "mdi-cog" },

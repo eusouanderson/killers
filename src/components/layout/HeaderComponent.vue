@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import LogoComponent from "@/components/ui/LogoComponent.vue";
 import Logo from "@/components/ui/LogoComponent.vue";
 
 const novaTemporada = () => {

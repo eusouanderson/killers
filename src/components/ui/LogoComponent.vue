@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center space-x-4">
+  <div class="flex items-center space-x-8">
     <div class="bg-white p-1 rounded-full border-2 border-red-600 shadow-md">
       <img
         src="@/assets/logo.png"
@@ -8,9 +8,9 @@
       />
     </div>
     <h1
-      class="text-2xl md:text-3xl font-bold text-red-600 font-header tracking-tight"
+      class="text-2xl md:text-4xl font-bold text-red-600 font-header tracking-tight ml-6"
     >
-      KILLERS <span class="text-white">FC</span>
+      KILLERS <span class="text-white mr-1">FC</span>
     </h1>
   </div>
 </template>
